@@ -38,10 +38,10 @@ export function HeroSection() {
 
           {/* Selector Module */}
           <div className="flex justify-center mb-8">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-1 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm p-1 border border-white/10" style={{borderRadius: "5px"}}>
               <button
                 onClick={() => setSelectedTab("deals")}
-                className={`rounded-md text-sm transition-all duration-200 ${
+                className={`text-sm transition-all duration-200 ${
                   selectedTab === "deals" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
                 }`}
                 style={{
@@ -49,6 +49,7 @@ export function HeroSection() {
                   paddingRight: "22px",
                   paddingTop: "14px",
                   paddingBottom: "14px",
+                  borderRadius: "5px",
                   ...(selectedTab === "deals"
                     ? {
                         background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
@@ -61,7 +62,7 @@ export function HeroSection() {
               </button>
               <button
                 onClick={() => setSelectedTab("negotiation")}
-                className={`rounded-md text-sm transition-all duration-200 ${
+                className={`text-sm transition-all duration-200 ${
                   selectedTab === "negotiation" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
                 }`}
                 style={{
@@ -69,6 +70,7 @@ export function HeroSection() {
                   paddingRight: "22px",
                   paddingTop: "14px",
                   paddingBottom: "14px",
+                  borderRadius: "5px",
                   ...(selectedTab === "negotiation"
                     ? {
                         background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
@@ -81,7 +83,7 @@ export function HeroSection() {
               </button>
               <button
                 onClick={() => setSelectedTab("acv")}
-                className={`rounded-md text-sm transition-all duration-200 ${
+                className={`text-sm transition-all duration-200 ${
                   selectedTab === "acv" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
                 }`}
                 style={{
@@ -89,6 +91,7 @@ export function HeroSection() {
                   paddingRight: "22px",
                   paddingTop: "14px",
                   paddingBottom: "14px",
+                  borderRadius: "5px",
                   ...(selectedTab === "acv"
                     ? {
                         background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
