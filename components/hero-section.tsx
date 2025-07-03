@@ -3,29 +3,22 @@
 import { useState } from "react"
 import { InteractiveGrid } from "@/components/ui/interactive-grid"
 import { ShineBorder } from "@/components/ui/shine-border"
-import Image from "next/image"
 
 export function HeroSection() {
   const [selectedTab, setSelectedTab] = useState<"deals" | "negotiation" | "acv">("deals")
 
   const tabContent = {
     deals: {
-      leftVideo: "https://fast.wistia.net/embed/iframe/21gjd93ikf", // First video
-      rightVideo: "https://fast.wistia.net/embed/iframe/21gjd93ikf", // Same video on right
-      leftAlt: "Deals Pipeline Video",
-      rightAlt: "Deal Progress Video",
+      video: "https://fast.wistia.net/embed/iframe/21gjd93ikf",
+      alt: "Deals Pipeline Video",
     },
     negotiation: {
-      leftVideo: "https://fast.wistia.net/embed/iframe/zpcjaxdg8r", // Second video
-      rightVideo: "https://fast.wistia.net/embed/iframe/zpcjaxdg8r", // Same video on right
-      leftAlt: "Negotiation Analytics Video",
-      rightAlt: "Negotiation Tools Video",
+      video: "https://fast.wistia.net/embed/iframe/zpcjaxdg8r",
+      alt: "Negotiation Analytics Video",
     },
     acv: {
-      leftVideo: "https://fast.wistia.net/embed/iframe/dbw5pdj49j", // Third video
-      rightVideo: "https://fast.wistia.net/embed/iframe/dbw5pdj49j", // Same video on right
-      leftAlt: "ACV Analysis Video",
-      rightAlt: "ACV Dashboard Video",
+      video: "https://fast.wistia.net/embed/iframe/dbw5pdj49j",
+      alt: "ACV Analysis Video",
     },
   }
 
@@ -111,39 +104,15 @@ export function HeroSection() {
         </div>
 
         <ShineBorder className="relative mx-auto" borderClassName="border border-white/10 rounded-xl overflow-hidden">
-          <div className="relative">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20image.jpg-mE5vAT4d864MlVhdkcrk1Vn2WcNONq.jpeg"
-              alt="Background Gradient"
-              width={1920}
-              height={1080}
-              className="w-full h-auto"
-              priority
+          <div className="relative w-full h-[600px]">
+            <iframe
+              src={tabContent[selectedTab].video}
+              className="w-full h-full rounded-lg"
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              title={tabContent[selectedTab].alt}
             />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <div className="bg-black/20 backdrop-blur-sm p-4 rounded-xl w-[90%] h-[70%] flex transition-all duration-300">
-                <div className="flex-1 pr-2">
-                  <iframe
-                    src={tabContent[selectedTab].leftVideo}
-                    className="w-full h-full rounded-lg"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
-                    title={tabContent[selectedTab].leftAlt}
-                  />
-                </div>
-                <div className="flex-1 pl-2">
-                  <iframe
-                    src={tabContent[selectedTab].rightVideo}
-                    className="w-full h-full rounded-lg"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
-                    title={tabContent[selectedTab].rightAlt}
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </ShineBorder>
       </ShineBorder>
