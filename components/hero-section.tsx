@@ -31,7 +31,7 @@ export function HeroSection() {
         borderClassName="border border-white/10 rounded-xl overflow-hidden"
       >
         <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">one of the reps on your team missed quota</h1>
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">One of the reps on your team missed quota</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#BFBFBF" }}>
             You need to help this rep level up right away otherwise they're going to throw off your entire team's numbers
           </p>
