@@ -8,10 +8,10 @@ export function Header() {
       <div className="flex items-center justify-between px-5 py-4 backdrop-blur-xl bg-black/50">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="Crop Studio" width={62} height={62} className="h-16 w-16" />
+            <Image src="/logo.png" alt="HNDL" width={62} height={62} className="h-16 w-16" />
           </Link>
         </div>
-        <Button variant="secondary" className="bg-white text-black hover:bg-gray-100">
+        <Button variant="secondary" className="bg-white text-black hover:bg-gray-100 rounded-lg">
           Download
         </Button>
       </div>
