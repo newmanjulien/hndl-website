@@ -62,7 +62,7 @@ export function HeroSection() {
               </button>
               <button
                 onClick={() => setSelectedTab("negotiation")}
-                className={`text-sm transition-all duration-200 ${
+                className={`text-base transition-all duration-200 ${
                   selectedTab === "negotiation" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
                 }`}
                 style={{
@@ -83,7 +83,7 @@ export function HeroSection() {
               </button>
               <button
                 onClick={() => setSelectedTab("acv")}
-                className={`text-sm transition-all duration-200 ${
+                className={`text-base transition-all duration-200 ${
                   selectedTab === "acv" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
                 }`}
                 style={{
