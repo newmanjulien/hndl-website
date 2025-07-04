@@ -41,7 +41,7 @@ export function HeroSection() {
             <div className="bg-white/5 backdrop-blur-sm p-1 border border-white/10" style={{borderRadius: "5px"}}>
               <button
                 onClick={() => setSelectedTab("deals")}
-                className={`text-sm transition-all duration-200 ${
+                className={`text-base transition-all duration-200 ${
                   selectedTab === "deals" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
                 }`}
                 style={{
