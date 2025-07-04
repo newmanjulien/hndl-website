@@ -1,26 +1,9 @@
 "use client"
 
-import { useState } from "react"
 import { InteractiveGrid } from "@/components/ui/interactive-grid"
 import { ShineBorder } from "@/components/ui/shine-border"
 
 export function HeroSection() {
-  const [selectedTab, setSelectedTab] = useState<"deals" | "negotiation" | "acv">("deals")
-
-  const tabContent = {
-    deals: {
-      video: "https://fast.wistia.net/embed/iframe/21gjd93ikf",
-      alt: "Deals Pipeline Video",
-    },
-    negotiation: {
-      video: "https://fast.wistia.net/embed/iframe/zpcjaxdg8r",
-      alt: "Negotiation Analytics Video",
-    },
-    acv: {
-      video: "https://fast.wistia.net/embed/iframe/dbw5pdj49j",
-      alt: "ACV Analysis Video",
-    },
-  }
 
   return (
     <section className="relative min-h-screen pt-36 pb-16 overflow-hidden bg-black">
@@ -40,82 +23,13 @@ export function HeroSection() {
         <ShineBorder className="relative mx-auto" borderClassName="border border-white/10 rounded-xl overflow-hidden">
           <div className="relative w-full h-[600px]">
             <iframe
-              src={tabContent[selectedTab].video}
+              src="https://fast.wistia.net/embed/iframe/21gjd93ikf"
               className="w-full h-full rounded-lg"
               frameBorder="0"
               allow="autoplay; fullscreen"
               allowFullScreen
-              title={tabContent[selectedTab].alt}
+              title="Deals Pipeline Video"
             />
-          </div>
-
-          {/* Selector Module */}
-          <div className="flex justify-center mt-8 mb-8">
-            <div className="bg-white/5 backdrop-blur-sm p-1 border border-white/10" style={{borderRadius: "9px"}}>
-              <button
-                onClick={() => setSelectedTab("deals")}
-                className={`text-base transition-all duration-200 ${
-                  selectedTab === "deals" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
-                }`}
-                style={{
-                  paddingLeft: "22px",
-                  paddingRight: "22px",
-                  paddingTop: "14px",
-                  paddingBottom: "14px",
-                  borderRadius: "7px",
-                  ...(selectedTab === "deals"
-                    ? {
-                        background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
-                        fontWeight: 600,
-                      }
-                    : {}),
-                }}
-              >
-                Deals don't move forward
-              </button>
-              <button
-                onClick={() => setSelectedTab("negotiation")}
-                className={`text-base transition-all duration-200 ${
-                  selectedTab === "negotiation" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
-                }`}
-                style={{
-                  paddingLeft: "22px",
-                  paddingRight: "22px",
-                  paddingTop: "14px",
-                  paddingBottom: "14px",
-                  borderRadius: "7px",
-                  ...(selectedTab === "negotiation"
-                    ? {
-                        background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
-                        fontWeight: 600,
-                      }
-                    : {}),
-                }}
-              >
-                Deals drop off in negotiation
-              </button>
-              <button
-                onClick={() => setSelectedTab("acv")}
-                className={`text-base transition-all duration-200 ${
-                  selectedTab === "acv" ? "text-white shadow-lg" : "text-white font-medium hover:bg-white/10"
-                }`}
-                style={{
-                  paddingLeft: "22px",
-                  paddingRight: "22px",
-                  paddingTop: "14px",
-                  paddingBottom: "14px",
-                  borderRadius: "7px",
-                  ...(selectedTab === "acv"
-                    ? {
-                        background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
-                        fontWeight: 600,
-                      }
-                    : {}),
-                }}
-              >
-                ACV is off whack
-              </button>
-            </div>
           </div>
         </ShineBorder>
       </ShineBorder>
