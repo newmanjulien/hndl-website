@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
@@ -10,6 +11,9 @@ export function Header() {
             <Image src="/logo.png" alt="Crop Studio" width={62} height={62} className="h-16 w-16" />
           </Link>
         </div>
+        <Button variant="secondary" className="bg-white text-black hover:bg-gray-100">
+          Download
+        </Button>
       </div>
     </header>
   )
