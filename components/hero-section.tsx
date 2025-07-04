@@ -35,6 +35,7 @@ export function HeroSection() {
           <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#BFBFBF" }}>
             You need to help this rep level up right away otherwise they're going to throw off your entire team's numbers
           </p>
+        </div>
 
         <ShineBorder className="relative mx-auto" borderClassName="border border-white/10 rounded-xl overflow-hidden">
           <div className="relative w-full h-[600px]">
@@ -49,7 +50,7 @@ export function HeroSection() {
           </div>
 
           {/* Selector Module */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mt-8 mb-8">
             <div className="bg-white/5 backdrop-blur-sm p-1 border border-white/10" style={{borderRadius: "9px"}}>
               <button
                 onClick={() => setSelectedTab("deals")}
@@ -116,7 +117,6 @@ export function HeroSection() {
               </button>
             </div>
           </div>
-        </div>
         </ShineBorder>
       </ShineBorder>
     </section>
