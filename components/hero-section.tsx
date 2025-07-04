@@ -28,7 +28,7 @@ export function HeroSection() {
 
       <ShineBorder
         className="relative z-10 max-w-6xl mx-auto px-6"
-        borderClassName="border border-white/10 rounded-xl overflow-hidden"
+        borderClassName="border border-white/10 rounded-2xl overflow-hidden"
       >
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">One of the reps on your team missed quota</h1>
