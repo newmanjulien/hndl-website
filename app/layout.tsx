@@ -6,9 +6,8 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Crop Studio - Protect Your Privacy, Share What Matters",
-  description: "Advanced screen sharing and workflow optimization tool",
-    generator: 'v0.dev'
+  title: "HNDL",
+  description: "Automatically get your reps to make quota",
 }
 
 export default function RootLayout({
