@@ -38,7 +38,7 @@ export function HeroSection() {
 
           {/* Selector Module */}
           <div className="flex justify-center mb-8">
-            <div className="bg-white/5 backdrop-blur-sm p-1 border border-white/10" style={{borderRadius: "5px"}}>
+            <div className="bg-white/5 backdrop-blur-sm p-1 border border-white/10" style={{borderRadius: "12px"}}>
               <button
                 onClick={() => setSelectedTab("deals")}
                 className={`text-base transition-all duration-200 ${
@@ -49,7 +49,7 @@ export function HeroSection() {
                   paddingRight: "22px",
                   paddingTop: "14px",
                   paddingBottom: "14px",
-                  borderRadius: "5px",
+                  borderRadius: "12px",
                   ...(selectedTab === "deals"
                     ? {
                         background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
@@ -70,7 +70,7 @@ export function HeroSection() {
                   paddingRight: "22px",
                   paddingTop: "14px",
                   paddingBottom: "14px",
-                  borderRadius: "5px",
+                  borderRadius: "12px",
                   ...(selectedTab === "negotiation"
                     ? {
                         background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
@@ -91,7 +91,7 @@ export function HeroSection() {
                   paddingRight: "22px",
                   paddingTop: "14px",
                   paddingBottom: "14px",
-                  borderRadius: "5px",
+                  borderRadius: "12px",
                   ...(selectedTab === "acv"
                     ? {
                         background: "linear-gradient(135deg, #FF3621 0%, #FE5745 50%, #FF2F19 100%)",
