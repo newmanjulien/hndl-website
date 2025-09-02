@@ -27,9 +27,9 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
-        <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
-          <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
-            Customer Success{" "}
+        <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-xl mx-auto md:mx-0 py-12 md:py-0">
+          <h1 className="text-6xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
+            Assistant for your{" "}
             <span
               style={{
                 backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -37,20 +37,20 @@ export function HeroSection() {
                 padding: "2px 3px",
               }}
             >
-              with Zero Hiring
-            </span>
+              personal life
+            </span>{" "}
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Increase revenue by giving enterprise-grade Customer Success to all
-            customers <strong>without hiring any more CSMs</strong>
+            You&apos;re way too busy at work so lets at least{" "}
+            <strong>make your personal life unbusy</strong>
           </p>
 
           <div className="flex items-center space-x-4 mt-2">
             <Button
               onClick={() => router.push("/waitlist")}
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-lg rounded-lg"
+              className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-md rounded-lg"
             >
               <span className="inline-flex items-center gap-2">
                 Join waitlist
@@ -68,7 +68,7 @@ export function HeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-gray-50 hover:bg-gray-100 text-black p-6 text-lg rounded-lg"
+                className="bg-gray-50 hover:bg-gray-100 text-black p-6 text-md rounded-lg"
               >
                 <span className="inline-flex items-center gap-2">
                   Demo with our CEO
